@@ -1,5 +1,8 @@
+#pip install requests
 import requests
+#pip install pyfiglet
 from pyfiglet import Figlet
+#pip install folium
 import folium
 
 
