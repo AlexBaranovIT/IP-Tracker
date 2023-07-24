@@ -1,4 +1,4 @@
-#pip install requests
+d#pip install requests
 import requests
 #pip install pyfiglet
 from pyfiglet import Figlet
@@ -6,6 +6,7 @@ from pyfiglet import Figlet
 import folium
 
 
+#Function that gets info by IP
 def get_info_by_ip(ip='127.0.0.1'):
     try:
         response = requests.get(url=f'http://ip-api.com/json/{ip}').json()
@@ -32,6 +33,7 @@ def get_info_by_ip(ip='127.0.0.1'):
         print('[!] Please check your connection!')
 
 
+#Main function
 def main():
     preview_text = Figlet(font='slant')
     print(preview_text.renderText('IP Tracker'))
