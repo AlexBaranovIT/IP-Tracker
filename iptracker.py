@@ -13,6 +13,7 @@ def get_info_by_ip(ip='127.0.0.1'):
         # print(response)
 
         data = {
+            #Formating data
             '[IP]': response.get('query'),
             '[Internet provider]': response.get('isp'),
             '[Organisation]': response.get('ord'),
