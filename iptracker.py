@@ -24,6 +24,7 @@ def get_info_by_ip(ip='127.0.0.1'):
             '[Lon]': response.get('lon'),
         }
 
+        
         for k, v in data.items():
             print(f'{k} : {v}')
 
