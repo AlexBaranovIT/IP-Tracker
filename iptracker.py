@@ -24,7 +24,6 @@ def get_info_by_ip(ip='127.0.0.1'):
             '[Lat]': response.get('lat'),
             '[Lon]': response.get('lon'),
         }
-        
         #Cycle for showing all IP info
         for k, v in data.items():
             print(f'{k} : {v}')
